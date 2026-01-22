@@ -116,6 +116,6 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 ## **Cite**
 If you use this software, please cite the following paper and software:
 
-- García-San-Martín, N., Bethlehem, R.A., Sebenius, I. et al. Long-term brain structural similarity is associated with cortical hierarchy and psychiatric symptoms in schizophrenia spectrum disorders. medRxiv (2026). https://doi.org/
+- García-San-Martín, N., Bethlehem, R.A., Sebenius, I. et al. Long-term morphometric similarity gradients relate to cortical hierarchy and psychiatric symptoms in schizophrenia. medRxiv (2026). https://doi.org/
   
 - Natalia-García-San-Martín. NeuroimagingBrainNetworks/HierarchyMINDPsychosis: v1.0.0-alpha. Zenodo https://doi.org/ (2026).

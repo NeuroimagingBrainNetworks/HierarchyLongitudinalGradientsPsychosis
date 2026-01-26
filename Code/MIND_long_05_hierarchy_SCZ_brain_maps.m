@@ -1,4 +1,4 @@
-%% Script to plot brain maps of cortical hierarchy and SCZ epicenters and their
+%% Script to plot brain maps of cortical hierarchy and SCZ epicenters, and their
 %% correlation with MIND associations.
 
 % Copyright (C) 2026 University of Seville
@@ -570,5 +570,6 @@ colorbar_white_centered(r_partial_matrix_baseline)
 
 figure;
 heatmap(p_spin_matrix_baseline_corrected','XData',r_partial_matrix.Properties.RowNames,'YData',{'dx1 degrees','dx1 G1','dx1 G2'},'Title','p spin');
+
 
 

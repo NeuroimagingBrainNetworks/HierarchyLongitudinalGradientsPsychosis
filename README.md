@@ -11,7 +11,7 @@ This repository contains code and data created in support of the project García
   - The `functional gradient` corresponds to the first gradient of functional connectivity derived from diffusion map embedding and was obtained from https://www.pnas.org/doi/10.1073/pnas.1608282113.
   * The `functional and structural epicenters in SCZ`, were obtained from an ENIGMA study available at https://www.nature.com/articles/s41380-024-02442-7.
     
-- The `perm_sphere_10000_DK.csv` file corresponds to the permutation matrix employed in the spin test.
+- The `perm_sphere_10000_DK.csv` file corresponds to the permutation matrix employed for the spin test.
 
 ## **Code**
 

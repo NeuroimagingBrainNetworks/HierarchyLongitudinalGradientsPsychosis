@@ -7,40 +7,36 @@ This repository contains code and data created in support of the project García
 
 The `Data` folder contains all the data required for running the analyses. Here are the files that need to be downloaded and stored in a specific location. The remaining files will be automatically generated:
 
-- `volumes` folder contains the regional volume and velocity peaks in `Table_2_2.csv` obtained from https://doi.org/10.1038/s41586-022-04554-y. Please, storage your volume data in it.
-
-- `centiles` folder contains the regional FEP centiles in `significant_values_68.csv` obtained from https://doi.org/10.1038/s41380-024-02724-0. Please, storage your centile data in it.
+- `volumes` folder contains the regional volume and velocity peaks in `Table_2_2.csv` obtained from https://doi.org/10.1038/s41586-022-04554-y. 
   
--	The code used to compute MIND networks (`MIND_networks_PAFIP` folder in `Data`) is available at https://github.com/isebenius/MIND and corresponds to [MIND_01_MIND.py](Code/MIND_01_MIND.py).
-
-- The `Desikan-Killiany68_Nat.txt` file contains the coordinates of the Desikan-Killiany Atlas 68 nodes for representing the spatial 3D brains in [MIND_04_brain_mapping_3D.m](Code/MIND_04_brain_mapping_3D.m).
+-	The code used to compute MIND networks is available at https://github.com/isebenius/MIND and corresponds to [MIND_long_01_MIND.py](Code/MIND_long_01_MIND.py).
 
 - The `sensorimotor-association_axis_ranking_DK.csv` file was derived from https://doi.org/10.1016/j.neuron.2021.06.016.
 
 -	The `all_microsc_DesikanKilliany68.csv` file is available at https://github.com/netneurolab/netneurotools.
 
--	The `molecular_names.xlsx` file contains the neurobiological features and their corresponding neurobiological type.
 
 
 ## **Code**
 
 The `Code` folder contains all the code required for running the analyses and generate data and figures. All scripts are designed to be sequentially executed. Don't forget to change the location variable regularly. 
 
--	[MIND_long_01_MIND.py](Code/MIND_01_MIND.py) – computes MIND networks from FreeSurfer directory (by default stored in the surf/ folder). It returns a .csv file for each individual and storages it in `MIND_networks_PAFIP` folder.
+-	[MIND_long_01_MIND.py](Code/MIND_01_MIND.py) – computes MIND networks from FreeSurfer directory (by default stored in the surf/ folder). It returns a .csv file for each individual.
   
 -	[MIND_long_02_COMBATLS.R](Code/MIND_long_02_COMBATLS.R) - 
   
--	[MIND_long_03_degree_and_edges_PAFIP_COMBATLS.m](Code/MIND_long_03_degree_and_edges_PAFIP_COMBATLS.m) – calculates for each HC and FEP individual the edges and degrees from MIND networks (`MIND_networks_PAFIP` folder). The results are stored in `degree` and `edges` folders. It returns a .csv file for each type (degree, edges).
+-	[MIND_long_03_degree_and_edges_PAFIP_COMBATLS.m](Code/MIND_long_03_degree_and_edges_PAFIP_COMBATLS.m) – calculates for each HC and FEP individual the edges and degrees from MIND networks.
+  
+-	[MIND_03_brain_mapping.R](Code/MIND_03_brain_mapping.R) –
+  
+-	[MIND_long_04_gradients.m](Code/MIND_long_04_gradients.m) – 
 
--	[MIND_03_brain_mapping.R](Code/MIND_03_brain_mapping.R) – generates the regional brain maps of: (1) MIND degree of HC and FEP, and (2) effect sizes of MIND degree from the .csv files previously generated.
+-	[MIND_long_05_hierarchy_SCZ_brain_maps.m](Code/MIND_long_05_hierarchy_SCZ_brain_maps.m) – generates the brain maps of cortical hierarchy and SCZ epicenters, and their correlation with MIND associations.
 
--	[MIND_long_04_gradients.m](Code/MIND_long_04_gradients.m) – generates the 3D spatial representation of the effect sizes of MIND edges and degrees from the .csv files previously generated.
+-	[MIND_long_06_cortical_MIND_association_maps.m](Code/MIND_long_06_cortical_MIND_association_maps.m) – generates the regional brain maps of cortical MIND associations.
 
--	[MIND_long_05_hierarchy_SCZ_brain_maps.m](Code/MIND_long_05_hierarchy_SCZ_brain_maps.m) – computes the associations between (1) MIND and centiles, (2) MIND and psychosis co-vulnerability, (3) hierarchical neurodevelopment and MIND and centiles, (4) peaks of volume/velocity and MIND and centiles.
 
--	[MIND_long_06_cortical_MIND_association_maps.m](Code/MIND_long_06_cortical_MIND_association_maps.m) – computes the regions connected to epicenters of the disease. It returns a .csv file for each dignosis (HC/FEP) and clinical outcome.
-
--	[MIND_long_07_subcortical_MIND_association_maps.m](Code/MIND_long_07_subcortical_MIND_association_maps.m) – generates the regional brain maps of HC and FEP connectivity to epicenters from the .csv files previously generated.
+-	[MIND_long_07_subcortical_MIND_association_maps.m](Code/MIND_long_07_subcortical_MIND_association_maps.m) – generates the regional brain maps of subcortical MIND associations.
 
 
 ```matlab

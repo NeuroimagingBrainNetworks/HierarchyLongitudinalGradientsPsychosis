@@ -4,7 +4,7 @@
 
 % Written by Natalia García San Martín (ngarcia1@us.es)
 
-% This file is part of Hierarchy MIND Psychosis toolkit.
+% This file is part of Hierarchy Longitudinal Gradients Psychosis toolkit.
 %
 % Hierarchy Longitudinal Gradients Psychosis toolkit is free software: 
 % you can redistribute it and/or modify it under the terms of the 
@@ -677,6 +677,7 @@ elseif strcmp(parcellation,'subcortical')
     colorbar_white_centered([min(abs(mean(degree_68_CN{covariates_CN.Assessment==1,:}))) max(abs(mean(degree_68_CN{covariates_CN.Assessment==1,:})))])
 
 end
+
 
 
 
